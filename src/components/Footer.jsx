@@ -6,9 +6,9 @@ const Footer = () => {
     color: 'white',
     textAlign: 'center',
     padding: '20px',
-    position: 'static',
+    position: 'fixed',
     bottom: '0',
-    height: '95%',
+    height: '2%',
     width: '96.87%',
   };
 

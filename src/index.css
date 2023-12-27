@@ -35,7 +35,7 @@ nav > h2 {
   justify-content: center;
   text-align: center;
   background: #000;
-  margin:0;
+  margin-bottom: 25px;
   
 }
 
@@ -98,11 +98,11 @@ nav > h2 {
 .cart-container {
   display: flex;
   justify-content:center;
-  margin: 38px;
+  margin: 30px;
   align-items: center;
   border-style:dashed;
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   background: rgb(128, 128, 128);
   
 }

@@ -1,32 +1,86 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { CartContext } from "../contexts/ShoppingCartContext";
 import Button from '@mui/material/Button';
+import Formulario from "./Formulario";
 
 export const ShoppingCart = () => {
   const [cart, setCart] = useContext(CartContext);
-  const gastaste = "Gastaste: ";
-  const quantity = cart.reduce((acc, curr) => {
-    return acc + curr.quantity;
-  }, 0);
+  const [metodoPago, setMetodoPago] = useState(null);
+  const [datosTarjeta, setDatosTarjeta] = useState({});
 
-  const totalPrice = cart.reduce(
-    (acc, curr) => acc + curr.quantity * curr.price,
-    0
-  );
+  const handleIncrease = (id) => {
+    setCart((prevCart) =>
+      prevCart.map((item) =>
+        item.id === id ? { ...item, quantity: item.quantity + 1 } : item
+      )
+    );
+  };
+
+  const handleDecrease = (id) => {
+    setCart((prevCart) =>
+      prevCart.map((item) =>
+        item.id === id && item.quantity > 0
+          ? { ...item, quantity: item.quantity - 1 }
+          : item
+      )
+    );
+  };
+
+  const handleRemove = (id) => {
+    setCart((prevCart) => prevCart.filter((item) => item.id !== id));
+  };
+
+  const handleFormSubmit = () => {
+    if (
+      (metodoPago === "transferencia" &&
+        datosTarjeta.cbu.trim() !== "" &&
+        datosTarjeta.nombreDestinatario.trim() !== "") ||
+      (metodoPago === "tarjeta" &&
+        datosTarjeta.numeroTarjeta.length === 16 &&
+        datosTarjeta.fechaVencimiento.length === 5 &&
+        datosTarjeta.cvv.length === 3)
+    ) {
+      alert("Compra realizada con éxito.");
+    } else {
+      alert("Por favor, complete los detalles de pago.");
+    }
+  };
+  
+  
+  
+  
 
   return (
     <div className="cart-container">
       <div>
         <br /><br /><br />
-        <div><h2>Items Agregados:</h2> <h3>{quantity}</h3></div>
+        <h2>Items Agregados:</h2>
+        {cart.map((item) => (
+          <div key={item.id}>
+            <img src={item.imgUrl} alt={item.name} width="50" height="50" />
+            <div>{item.name}</div>
+            <div>Cantidad: {item.quantity}</div>
+            <Button onClick={() => handleIncrease(item.id)} variant="contained" color="primary">+</Button>
+            <Button onClick={() => handleDecrease(item.id)} variant="contained" color="primary">-</Button>
+            <Button onClick={() => handleRemove(item.id)} variant="contained" color="secondary">Eliminar</Button>
+          </div>
+        ))}
         <br />
-        <div>Total: ${totalPrice}</div>
+        <div>Total: ${cart.reduce((acc, curr) => acc + curr.quantity * curr.price, 0)}</div>
         <br />
-                
-        <Button onClick={() => alert(gastaste+totalPrice)} variant="contained" color="secondary">Realizar Compra</Button>
+        <Formulario
+          setMetodoPago={setMetodoPago}
+          setDatosTarjeta={setDatosTarjeta}
+          datosTarjeta={datosTarjeta}
+        />
+        <br />
+        <Button onClick={handleFormSubmit} variant="contained" color="secondary" disabled={!metodoPago}>
+          Realizar Compra
+        </Button>
         <br /><br /><br /><br />
       </div>
-      
     </div>
   );
 };
+
+export default ShoppingCart;
