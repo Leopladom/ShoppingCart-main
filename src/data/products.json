@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "name": "Anafe",
+    "price": 9999,
+    "imgUrl": "./images/anafe.png"
+  },
+  {
+    "id": 2,
+    "name": "Batidora",
+    "price": 800,
+    "imgUrl": "./images/batidora.png"
+  },
+  {
+    "id": 3,
+    "name": "Celular",
+    "price": 48000,
+    "imgUrl": "./images/celu.png"
+  },
+  {
+    "id": 4,
+    "name": "Celular 2",
+    "price": 57050,
+    "imgUrl": "./images/celu2.png"
+  },
+    
+  {
+    "id": 5,
+    "name": "Freidora",
+    "price": 631479,
+    "imgUrl": "./images/freidora.png"
+  },
+  {
+    "id": 6,
+    "name": "Heladera",
+    "price": 18550,
+    "imgUrl": "./images/heladera.png"
+  },
+  {
+    "id": 7,
+    "name": "Horno",
+    "price": 974585,
+    "imgUrl": "./images/horno.png"
+  },
+  {
+    "id": 8,
+    "name": "Lavadora",
+    "price": 485000,
+    "imgUrl": "./images/lava.png"
+  },
+  {
+    "id": 9,
+    "name": "Lavadora 2",
+    "price": 75874,
+    "imgUrl": "./images/lava2.png"
+  },
+  {
+    "id": 10,
+    "name": "Lavadora 3",
+    "price": 125749,
+    "imgUrl": "./images/lava3.png"
+  },
+  {
+    "id": 11,
+    "name": "Licuadora",
+    "price": 57412,
+    "imgUrl": "./images/licu.png"
+  },
+  {
+    "id": 12,
+    "name": "Plancha",
+    "price": 18550,
+    "imgUrl": "./images/plancha.png"
+  },
+  {
+    "id": 13,
+    "name": "Telefono 1",
+    "price": 35677,
+    "imgUrl": "./images/tel.png"
+  },
+  {
+    "id": 14,
+    "name": "Telefono 2",
+    "price": 65789,
+    "imgUrl": "./images/tel2.png"
+  },
+  {
+    "id": 15,
+    "name": "Telefono 3",
+    "price": 45874,
+    "imgUrl": "./images/telef4.png"
+  },
+  {
+    "id": 16,
+    "name": "Termotanque",
+    "price": 654879,
+    "imgUrl": "./images/termotanque.png"
+  },
+  {
+    "id": 17,
+    "name": "Tostadora",
+    "price": 58755,
+    "imgUrl": "./images/tostadora.png"
+  },
+  {
+    "id": 18,
+    "name": "Ventilador",
+    "price": 485000,
+    "imgUrl": "./images/ventilador.png"
+  },
+  {
+    "id": 19,
+    "name": "Pc - Escritorio",
+    "price": 855000,
+    "imgUrl": "./images/pc1.png"
+  },
+  {
+    "id": 20,
+    "name": "Pc - Escritorio 2",
+    "price": 4800,
+    "imgUrl": "./images/pc2.png"
+  }
+  ,
+  {
+    "id": 21,
+    "name": "Pc - Escritorio 3",
+    "price": 1484000,
+    "imgUrl": "./images/pc3.png"
+  }
+]

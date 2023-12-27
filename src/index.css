@@ -1,0 +1,114 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+  
+}
+nav {
+  background-color: #2320e7;
+  color: #08db08;
+  display: flex;
+  justify-content:space-between;
+  margin: 0;
+  padding: 25px;
+  
+}
+
+nav > h2 {
+  position: relative;
+  left: 10px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+  list-style: none;
+  cursor: pointer;
+}
+
+/******** Items List ******/
+
+.items-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  background: #000;
+  margin:0;
+  
+}
+
+/****** Item  box *********/
+.item-box {
+  background-color: #fff;
+  margin: 28.5px;
+  padding: 15px;
+  width: 120px;
+  border-radius: 5px;
+  border: 1px solid #d43636;
+  
+}
+
+.item-quantity {
+  color: #fff;
+  background-color: #874ef0;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  max-width: 30px;
+  position: relative;
+  left: 40px;
+}
+
+.item-price {
+  color: gray;
+}
+
+.item-add-button {
+  background-color: #5cb85c;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  font-size: 11px;
+  cursor: pointer;
+  height: 20px;
+}
+
+.item-minus-button {
+  background-color: #d9534f;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.item-plus-button {
+  background-color: #3335b7;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+/****** Shopping Cart ********/
+
+.cart-container {
+  display: flex;
+  justify-content:center;
+  margin: 38px;
+  align-items: center;
+  border-style:dashed;
+  text-align: center;
+  font-size: 50px;
+  background: rgb(128, 128, 128);
+  
+}
+
+.cart-count {
+  background-color: rgb(217, 255, 0);
+  border-radius: 10px;
+  padding: 8px;
+}
