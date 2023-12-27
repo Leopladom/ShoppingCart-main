@@ -40,18 +40,18 @@ export const ShoppingCart = () => {
         datosTarjeta.fechaVencimiento.length === 5 &&
         datosTarjeta.cvv.length === 3)
     ) {
-      alert("Compra realizada con éxito.");
+      alert("Compra realizada con éxito. Una vez que verifiquemos los datos, se realizará el envío");
     } else {
       alert("Por favor, complete los detalles de pago.");
     }
   };
-  
-  
-  
-  
+
+  const cartContainerStyle = {
+    marginBottom: '6%', // Ajusta este valor según la altura de tu footer
+  };
 
   return (
-    <div className="cart-container">
+    <div className="cart-container" style={cartContainerStyle}>
       <div>
         <br /><br /><br />
         <h2>Items Agregados:</h2>

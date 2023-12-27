@@ -40,7 +40,7 @@ const Formulario = ({ setMetodoPago, datosTarjeta, setDatosTarjeta }) => {
 
   return (
     <div>
-      <h3>Seleccione un método de pago:</h3>
+      <h5>Seleccione un método de pago:</h5>
       <select onChange={handleMetodoPagoChange}>
         <option value="tarjeta">Pago con tarjeta</option>
         <option value="transferencia">Transferencia</option>

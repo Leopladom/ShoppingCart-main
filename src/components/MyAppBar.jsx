@@ -36,7 +36,7 @@ export default function MyAppBar() {
             <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
               <Button color="inherit">
                 <Typography variant="h6" component="div">
-                  Tienda
+                "ShopCart"
                 </Typography>
               </Button>
             </Link>

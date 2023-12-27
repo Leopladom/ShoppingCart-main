@@ -8,13 +8,18 @@ const Footer = () => {
     padding: '20px',
     position: 'fixed',
     bottom: '0',
-    height: '2%',
+    height: '6%',
     width: '96.87%',
+    
   };
 
   return (
     <div style={footerStyle}>
-      <h1>Leonardo Plaza Todos los Derechos Reservados</h1>
+      
+      <p>Contáctenos:</p>
+      <p>Teléfono: +54 03516221155</p>
+      <p>Correo Electrónico: info@lplaza.com</p>
+      <p>Dirección: Calle Falsa 123 Ciudad Imaginaria</p>
     </div>
   );
 };
