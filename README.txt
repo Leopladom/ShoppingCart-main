@@ -1,3 +1,6 @@
+
+Desplegado en https://appfinalalk.netlify.app/cart
+
 Guía de Uso de la Aplicación de Carrito de Compras
 ¡Bienvenido a nuestra aplicación de carrito de compras! Esta aplicación te permite gestionar
  tu lista de compras de manera eficiente y realizar pagos mediante diferentes métodos. 
