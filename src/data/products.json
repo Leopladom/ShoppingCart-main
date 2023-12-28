@@ -100,7 +100,7 @@
     "id": 17,
     "name": "Tostadora",
     "price": 58755,
-    "imgUrl": "../public/images/tostadora.png"
+    "imgUrl": "./images/tostadora.png"
   },
   {
     "id": 18,
